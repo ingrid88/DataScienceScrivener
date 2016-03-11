@@ -1,0 +1,58 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf340
+\cocoascreenfonts1{\fonttbl\f0\fnil\fcharset0 Cochin;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red38\green38\blue38;\red245\green245\blue245;\red148\green6\blue75;
+\red230\green83\blue52;\red19\green36\blue126;}
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\fi360\sl288\slmult1\pardirnatural
+
+\f0\fs28 \cf0 Bias and variance\
+\
+Naive Bayes (probability of y given x)\
+Logistic regression (y given x) with sigmoid function\
+\
+\
+\
+\
+\
+SPARK\
+Originally written in scala, we use pyspark\
+\
+Look up on stackoverflow on how to remove spark logs\
+We hava a jvm waiting on each node waiting to be run\
+It has a faster processing time than hadoop\
+\
+\
+RDD is the main thing in spark (if you understand this, you understand spark and why its awesome and faster than hadoop)\
+\
+There are three reasons\'85 \
+1. Partitioning\
+2. Laziness\
+	Results not computed right away	spark remembers what we\'92ve asked of it\
+	\
+3. Caching\
+\
+If we had a 1000 node cluster, we wouldn\'92t want 4 partitions because then you wouldn\'92t be using all 1000 nodes. \
+\
+But if you have a thousand node clusters / partitions but very little data, that would be bad too\'85 all gains lost in crazy overhead of this \
+\
+Spark has it\'92s own standalone manager\
+You cude use yarn or mesos \
+\
+Name node or master node assigns stuff to worker nodes. \
+\
+\
+\pard\pardeftab720\sl380
+
+\f1 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 df \cf4 \strokec4 =\cf2 \strokec2  sqlContext.load(\cf5 \strokec5 source\cf4 \strokec4 =\cf6 \strokec6 "com.databricks.spark.csv"\cf2 \strokec2 , \cf5 \strokec5 header\cf4 \strokec4 =\cf6 \strokec6 "true"\cf2 \strokec2 , \cf5 \strokec5 path\cf2 \strokec2  \cf4 \strokec4 =\cf6 \strokec6 '/Users/ingrid/Downloads/AllstarFull.csv'\cf2 \strokec2 )\
+\
+\
+Movie recommenders , alternating least squares, svd\'92s\
+\
+\
+You solve vector for movie \
+\
+Sochastic gradient descent\'85. Alternating least squares\'85 solve for movies from users and then users from movies\
+\
+\
+PcoA??\
+}

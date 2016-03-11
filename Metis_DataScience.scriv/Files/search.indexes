@@ -1,0 +1,1984 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SearchIndexes Version="1.0">
+    <Documents>
+        <Document ID="53">
+            <Title>Notes</Title>
+        </Document>
+        <Document ID="61">
+            <Title>Advanced Machine Learning Tutorial</Title>
+            <Text>Advanced Machine Learning Tutorial
+NYC Women in Machine Learning &amp; Data Science
+
+Documents
+file:///Users/ingrid/Desktop/odscon-sf-2015/</Text>
+        </Document>
+        <Document ID="54">
+            <Title>E2C Instances</Title>
+            <Synopsis>1. Setup
+2. Connect ipython
+3. Keys</Synopsis>
+            <Text>1. generate pem and record the public ip: 54.200.163.225 elephant88.pem
+2. ssh in to this using your pem. ssh -i ~/.ssh/elephant88.pem ubuntu@54.191.180.100
+3. sudo apt-get update  (sudo - root privaleges)
+4. pip install
+
+ssh-keygen -t rsa
+cat id_rsa.pub
+sudo nano /home/my_cool_username/.ssh/authorized_keys
+
+jupyter notebook --no-browser --port=8889
+ssh -N -L localhost:8888:localhost:8889 ubuntu
+ https://coderwall.com/p/ohk6cg/remote-access-to-ipython-notebooks-via-ssh
+
+https://localhost:8888/
+---&gt; 
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC0JC/cKA8cVR3+UvykLA7RRPMqnQ/oEm/2rrJ6XQx6EYB0DgkwCc8HOzOCz3DK6wWu4N/TwiyV6WZH7Rfk6ruT1ZaECn91xGue/0k5GTJmUxZzObyoyRbo+1daZwEWmCTeFP3Ui/HyTGTuR613Z71IcOOAHjrHUir+rPm1p3NpV4MtA0a7XyPOdM74jLhPt4iDYx3xhPiL2vjvqB05lQbqSk3Feky5LiaQ592Q4HWBGH8V2p1DHNhLhP710b2KBjnQ2O4+O3m5iQgJHkvXEAUAjP+5WtfLmWFN+i4FNuDkJDPNLVJRR/sgyAkYFcZUvHpJE53Y3q+GvI9Eomeuc5ML ingrid@Ingrids-MacBook-Air.local
+ ~/.ssh
+
+
+~/.ssh/config
+
+Host ubuntu
+Hostname 54.191.180.100
+User ingrid
+
+ssh ubuntu   (YAYA)
+
+ls -a to se what is in the cloud machine
+
+COPY ewoks FROM '/home/ingrid/ewoks.csv' DELIMITER ',' CSV HEADER;
+
+D0342827979634 invitation code
+
+scp -i ~/Path-To-Key-File/AAA.gem /path/file  ec2-user@&lt;Private IP of Machine B&gt;:/path/file
+
+scp /Users/ingrid/Desktop/METIS/ds/metis/nyc16_ds6/07-fletcher1/02-mongo_twitter/heavy_metal_parsed.pkl ubuntu:~
+(From LOCaaL)</Text>
+        </Document>
+        <Document ID="47">
+            <Title>Meetup Notes</Title>
+        </Document>
+        <Document ID="62">
+            <Title>23andme key</Title>
+            <Synopsis>1. key
+2. api setup</Synopsis>
+            <Text>rs13102260
+NF-κB snp
+
+client_id: 312f7627eabaea24415d749a66e94bc0
+client_secret: e52197913b9cc2030a188c3c554d18fe
+
+http://localhost:5000/receive_code/
+
+ https://api.23andme.com/authorize/</Text>
+        </Document>
+        <Document ID="55">
+            <Title>Music Algorithm Ideas </Title>
+            <Text>MUSIC IDEAS
+1. Youtube mashups
+- youtube-dl -x [youtube link]
+- opus file generated
+
+2. fractalize youtubes
+3. sonify using word2vecs 
+
+
+opus --&gt; mp3
+avconv
+ff
+</Text>
+        </Document>
+        <Document ID="48">
+            <Title>Visualizing Health Data and Polyglot Visualization with the Beaker Notebook</Title>
+            <Text>Tuesday 2/9 @ 6:30pm:  Metis is hosting a meetup for Data Visualization NYC called 
+Visualizing Health Data and Polyglot Visualization with the Beaker Notebook - see the event page here!  You can sign up if you want to but not necessary since you will be on the floor regardless.
+
+
+Revolutionary analytics — looking for text reviewers (sign up)
+microsoft R open 
+
+ludwig wittgenstein
+
+NLP constraints - different meanings from same expression, different language for same meaning
+
+	⁃	lack of trust (dr to patient and visa versa)
+	⁃	patients don’t know how to use device
+
+	⁃	dr problems = 
+	⁃	initial skeptic
+	⁃	patients
+	⁃	wide range of tech comfort
+	⁃	pilot — IRB issues
+
+reactive healthcare models
+
+
+
+Scott Draves &gt;&gt; Polyglot visualization with the beaker notebook
+Two Sigma 2∂
+
+docker container… easy to run in the cloud. what is an electron native app
+
+	⁃	advanced user interface
+	⁃	polyglot architecture — focus on your data and your science
+
+
+notebook interface — most well known is python or jupyter
+
+
+ditto for python
+
+
+</Text>
+        </Document>
+        <Document ID="70">
+            <Title>Untitled</Title>
+        </Document>
+        <Document ID="63">
+            <Title>Brewlink Errors</Title>
+            <Text>Error: The `brew link` step did not complete successfully
+The formula built, but is not symlinked into /usr/local
+Could not symlink lib/libgmp.10.dylib
+/usr/local/lib is not writable.
+
+You can try again using:
+  brew link gmp
+==&gt; Summary
+🍺  /usr/local/Cellar/gmp/6.1.0: 15 files, 3.2M
+==&gt; Installing homebrew/science/opencv dependency: mpfr
+==&gt; Downloading https://homebrew.bintray.com/bottles/mpfr-3.1.3.el_capitan.bottl
+######################################################################## 100.0%
+==&gt; Pouring mpfr-3.1.3.el_capitan.bottle.tar.gz
+Error: The `brew link` step did not complete successfully
+The formula built, but is not symlinked into /usr/local
+Could not symlink lib/libmpfr.4.dylib
+/usr/local/lib is not writable.
+
+You can try again using:
+  brew link mpfr
+==&gt; Summary
+🍺  /usr/local/Cellar/mpfr/3.1.3: 24 files, 3.5M
+==&gt; Installing homebrew/science/opencv dependency: libmpc
+==&gt; Downloading https://homebrew.bintray.com/bottles/libmpc-1.0.3.el_capitan.bot
+######################################################################## 100.0%
+==&gt; Pouring libmpc-1.0.3.el_capitan.bottle.tar.gz
+Error: The `brew link` step did not complete successfully
+The formula built, but is not symlinked into /usr/local
+Could not symlink lib/libmpc.3.dylib
+/usr/local/lib is not writable.
+
+You can try again using:
+  brew link libmpc
+==&gt; Summary
+🍺  /usr/local/Cellar/libmpc/1.0.3: 10 files, 349.3K
+==&gt; Installing homebrew/science/opencv dependency: isl
+==&gt; Downloading https://homebrew.bintray.com/bottles/isl-0.15.el_capitan.bottle.
+######################################################################## 100.0%
+==&gt; Pouring isl-0.15.el_capitan.bottle.tar.gz
+Error: The `brew link` step did not complete successfully
+The formula built, but is not symlinked into /usr/local
+Could not symlink lib/libisl.15.dylib
+/usr/local/lib is not writable.
+
+You can try again using:
+  brew link isl
+==&gt; Summary
+🍺  /usr/local/Cellar/isl/0.15: 69 files, 3.6M
+==&gt; Installing homebrew/science/opencv dependency: gcc
+==&gt; Downloading https://homebrew.bintray.com/bottles/gcc-5.3.0.el_capitan.bottle
+######################################################################## 100.0%
+==&gt; Pouring gcc-5.3.0.el_capitan.bottle.tar.gz
+Error: The `brew link` step did not complete successfully
+The formula built, but is not symlinked into /usr/local
+Could not symlink lib/gcc
+/usr/local/lib is not writable.
+
+You can try again using:
+  brew link gcc
+==&gt; Caveats
+GCC has been built with multilib support. Notably, OpenMP may not work:
+  https://gcc.gnu.org/bugzilla/show_bug.cgi?id=60670
+If you need OpenMP support you may want to
+  brew reinstall gcc --without-multilib
+==&gt; Summary
+🍺  /usr/local/Cellar/gcc/5.3.0: 1,361 files, 261.7M
+==&gt; Installing homebrew/science/opencv dependency: eigen
+==&gt; Downloading https://homebrew.bintray.com/bottles/eigen-3.2.7.el_capitan.bott
+######################################################################## 100.0%
+==&gt; Pouring eigen-3.2.7.el_capitan.bottle.tar.gz
+Error: An unexpected error occurred during the `brew link` step
+The formula built, but is not symlinked into /usr/local
+Permission denied - /usr/local/lib/pkgconfig
+Error: Permission denied - /usr/local/lib/pkgconfig
+Ingrids-MacBook-Air:~ ingrid$ brew link gmp
+Linking /usr/local/Cellar/gmp/6.1.0...
+Error: Could not symlink lib/libgmp.10.dylib
+/usr/local/lib is not writable.
+Ingrids-MacBook-Air:~ ingrid$ sudo brew link gmp
+Password:
+Sorry, try again.
+Password:
+Sorry, try again.
+Password:
+Error: Cowardly refusing to 'sudo brew link'
+You can use brew with sudo, but only if the brew executable is owned by root.
+However, this is both not recommended and completely unsupported so do so at
+your own risk.</Text>
+        </Document>
+        <Document ID="56">
+            <Title>Job Search</Title>
+        </Document>
+        <Document ID="49">
+            <Title>Ben: </Title>
+            <Synopsis>Gensim</Synopsis>
+        </Document>
+        <Document ID="71">
+            <Title>PDFminer</Title>
+            <Text>PDFminer
+file:///Users/ingrid/Desktop/pdfminer-20140328/</Text>
+        </Document>
+        <Document ID="64">
+            <Title>Neural Network Methods</Title>
+            <Text>http://www.cs.utexas.edu/users/nn/pages/research/neuroevolution.html
+
+RWG, SANE CNE*, ESP, NEAT, CMA-ES*, CXNN, CoSyNE
+single pole and double pole problem!!
+
+handbook of neuroevolution through erlang (gene sher
+
+</Text>
+        </Document>
+        <Document ID="57">
+            <Title>Resume Advice</Title>
+            <Text>Dice, angles ice, the ladders
+job aq: online, network, notices
+
+
+stay organized!
+
+create your narrative: what lead you to data science?
+what are you interested in the position, why are you qualified for this position, what are thee important qualities a DS should have and Wy?
+what is metis, how was it prepared you, what will you excel first 30 days, what areas will you need guidance
+be prepared to talk through 2 projects and include, motivation approach what you learned and optimizations
+
+for the metis part, capture the pace of the program. the rigor, the difficult. 
+
+WHAT PROBLEM WOULD YOU WANT TO SOLVE FOR US!
+
+
+DRESS COE: bring copy of resume, dress for success, get interview details, know where you’re going, leave early to arrive early, turn off your cell, be polite to everyone, be confident
+
+problems (take homes)
+case studies prep
+
+
+common mistakes : lack of eye contact or not smiling
+
+excitement and enthusiasm and authenticity, you’ve done your hw, ask good q, particular for a DS, confidence and grit
+follow up
+
+first impressions aren’t the end. even if you don’t like the person you talk to, it might not be what the company really is. 
+
+behaving professional!!!!
+
+thank you within 24hrs. send each person you met a thank you letter. </Text>
+        </Document>
+        <Document ID="72">
+            <Title>Spacy Documentation</Title>
+        </Document>
+        <Document ID="65">
+            <Title>control (git)</Title>
+            <Text>https://github.com/carsomyr/scrivener_starter
+
+
+git fetch origin
+git reset --hard origin/master
+</Text>
+        </Document>
+        <Document ID="58">
+            <Title>Ben: </Title>
+            <Synopsis>Gensim</Synopsis>
+        </Document>
+        <Document ID="80">
+            <Title>Jon Krohn</Title>
+            <Text>Jon Krohn
+Chief Data Scientist, untapt
+Tuesday 3/1 at 6:00 PM in the classroom
+
+Jon@untapt.com
+Modeling the success of software developer job applications
+
+Automatically assess how great of a fit they may be for an opportunity listed in our system
+They are matching candidates to companies
+
+He wrote a post : data scientist skills and data scientist salaries
+
+Gener bias in open source
+https://peerj.com/preprints/1733/
+
+https://textio.com/
+How to keep an eye on diversity when you’re hiring tech talent
+1. Review internal hiring trends
+2. Use tules like textio to reduce amile bias in JDs
+3. Determine specific hiring criteria before interviews
+4. Have a diverse hiring team
+5. Token candidate… insufficient
+
+
+Download 2015 data science salary survey by john king and roger magoulas
+https://www.oreilly.com/ideas/2015-data-science-salary-survey
+
+On top of d3 simpler
+http://nvd3.org/
+
+If you know d3 and spark, you make a lot more per year
+
+
+Job that he left, he couldn’t fill…. The skillset they list is huge and impossible to have. 
+In the real world, a lot of jobs seem unqualified for: 
+
+Excenture expectations of a data scientist
+
+Jonkrohn.com/resources for more!
+
+Clearly explain findings in clear, lay terms!!!
+
+Mapreduce vs spark, hive,pig, aws…
+
+Un.org/en/globalissues
+Millennium-project.org/millennium/challenges.html
+Jamesmartin.com/book/megaproblems.cfm 
+</Text>
+        </Document>
+        <Document ID="73">
+            <Title>Python Libraries</Title>
+        </Document>
+        <Document ID="66">
+            <Title>Pelican Commands</Title>
+            <Text>
+cd $(greadlink -f $0))
+pelican content -o output -s pelicanconf.py
+gph-import output
+git push -f origin gh-pages:master
+git push ingrid88@github.com:ingrid88/ingrid88.github.io.git gh-pages:master
+
+
+ chmod 777 .
+stat -f "%Olp" publish.sh
+so pelican c</Text>
+        </Document>
+        <Document ID="59">
+            <Title> Careers Workshop 1: LinkedIn Clinic!</Title>
+        </Document>
+        <Document ID="81">
+            <Title>Alex Cholas-Wood</Title>
+            <Text>Alex Cholas-Wood
+Director of Analytics, NYPD
+Wednesday 3/2 at 6:00 PM in the back room
+
+D1.5 years … policy and data shop of the department
+
+Compstat - way of tracking basic statistics for a certain geography to hold people accountable to bring time task down
+
+Report is a starting point to talk with commanders and where they may have made mistakes. Seenthe wire?
+
+Map of 33 precinct for a week in june 
+
+Software platform domaine awareness system
+See live 911
+Historical information
+
+Metrics : % changes: we sk data preformed q
+
+
+Tables lists and maps
+
+Tong Wang Cyntha Rudin… what are patterns : a group of crimes comited with the same modus operandi… potentially byt he same person
+Extremely importan tto identify in order to identify, outbreaks, focus, reseources and pool evidence
+
+Built with assistance from john hall…..
+
+Patternizer…. Google searh: best matches appear at top of list
+kde time series
+chrome-extension://oemmndcbldboiebfnladdacbdfmadadm/http://www.econ.cam.ac.uk/people/faculty/ach34/pubs10/TVDahvo9.pdf
+
+What is goodalls meaasure
+Nx is the frequency of that categorical value in the dataset
+
+
+Early intervention system can we predict misconduct and enroll overicers in training before they make sitakes
+
+Natrative text mining, how can we take advanteage of the digital fre text records
+
+Heirarchical anomly detection… can we detect statistically significant outbreaks of crime just as they are starting
+
+Alexander.chohlaswood@nypd.org</Text>
+        </Document>
+        <Document ID="74">
+            <Title>Node on AWS</Title>
+            <Text>3. sudo apt-get update  (sudo - root privaleges)
+4. pip install
+
+https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions
+curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+
+</Text>
+        </Document>
+        <Document ID="67">
+            <Title>Neural Networks</Title>
+            <Text>neural networks
+ - input signals --&gt; weights --&gt; grouped at neuron --&gt;output signal
+y = sign[summation
+frank rosevelt?
+e(p) = Yd(p) - Y(p)
+
+https://en.wikipedia.org/wiki/Perceptron
+genetic algorithms
+
+show the full data set is one epoch
+look at trooth table, set random initial weights, how is error calculated??
+teach how it can be and / or gate, Not XOR
+
+multilayered perceptron, n+1 connections?
+back propogation
+
+- topology of the network needs to be known in advance
+- no recurrent connections are allowed
+- activation function must be differentiable
+- training set of sufficient diversisty and size
+neo darwinian paradigm
+fundamental theorem of genetic algorithms
+-- bit sized genetics, with 1 and 0, crossover (cut bit strings and swap), and mutations(fllip bits)
+
+- represent the candidate solution as a chromosome
+- population size, crossover prob, mut prob
+fitness function
+
+traveling salesmen problem
+cities names in a row (chromosome)
+fitness = 1/total distance
+ccrossover with city lists ??
+  --- random sllices from parent 1, put them in same plase as where they were and then add values from paretn 2 and skip what was already added. 
+ -- mutation is easy
+finally, chose the iniaila ppoulation... 10? Pc = .7, mutation is .005
+
+DSXN by gene
+
+inputs (also called sensors)
+outputs (actuators)
+fintess function
+
+systems and controls
+forex trading (currency trading)
+output would be buy sell or hold
+correct minus incorrect predictions
+
+evolutionary algorithm
+1. represent the candidate as a chromosome
+2. fitness = performance of network 
+2. crossover doesn't work for large neural networks...duh
+4. mutantions, we can make new networks, or remove the connection, add neuron in between
+
+instead of cross over, number of mutations = random(1 to sqrt(networksize)
+random impact mutation
+
+DXNN
+memetic algorithm
+
+stochastic hill climber (local search)
+see if we can get higher than current weights
+
+bjarne dacker erlang -- a language for neuroevolution -- a new programming language
+exoself???
+what is fault tolerance  
+
+campaign tracker</Text>
+        </Document>
+        <Document ID="82">
+            <Title>Fillzilla into EC2 instance</Title>
+            <Text>Fillzilla into EC2 instance
+
+http://stackoverflow.com/questions/16744863/connect-to-amazon-ec2-file-directory-using-filezilla-and-sftp
+
+On my own 
+scp -i ~/.ssh/elephant88.pem ubuntu@54.187.181.135:/home/ubuntu/political_tweets.p .</Text>
+        </Document>
+        <Document ID="4">
+            <Title>Metis Class Notes</Title>
+        </Document>
+        <Document ID="75">
+            <Title>Forever.js</Title>
+            <Text>https://github.com/foreverjs/forever
+
+http://stackoverflow.com/questions/19571282/using-forever-js-with-python
+
+forever start -c python python_script.py
+
+
+
+Other OPtions include
+http://linux.101hacks.com/unix/nohup-command/
+Nohup
+ tmux 
+
+
+</Text>
+        </Document>
+        <Document ID="68">
+            <Title>Where to go for code practice</Title>
+            <Text>tracking the Coding Interview &lt;-- do this first if you're short on time
+hackerrank , leetcode &lt;-- clean easy practice
+geeksforgeeks &lt;-- goes decently in depth
+TopCoder &lt;-- questions are a lot tougher imo, if you're bored / have time
+Pramp &lt;-- P2P inte</Text>
+        </Document>
+        <Document ID="69">
+            <Title>Anaconda / ipython on the Cloud</Title>
+            <Text>Anaconda2-2.5.0-MacOSX-x86_64.sh: line 437: /home/ingrid/anaconda2/pkgs/python-2.7.11-0/bin/python: cannot execute binary file: Exec format error
+ERROR:
+cannot execute native osx-64 binary, output from 'uname -a' is:
+Linux ip-172-31-19-212 3.13.0-74-generic #118-Ubuntu SMP Thu Dec 17 22:52:10 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux
+
+Prepending PATH=/home/ingrid/anaconda2/bin to PATH in /home/ingrid/.bashrc
+A backup will be made to: /home/ingrid/.bashrc-anaconda2.bak
+
+
+http://localhost:8888/
+c = get_config()
+c.NotebookApp.open_browser = False
+other options...
+
+Anaconda2-2.5.0-MacOSX-x86_64.sh: line 235: md5: command not found
+WARNING: md5sum mismatch of tar archive</Text>
+        </Document>
+        <Document ID="90">
+            <Title>when does the theme switch?</Title>
+            <Synopsis>&gt;&gt; </Synopsis>
+        </Document>
+        <Document ID="6">
+            <Title>Section</Title>
+        </Document>
+        <Document ID="83">
+            <Title>W8D2: Word2Vec</Title>
+            <Text>Cosine Similarities: A.B / [[A]][[B]]
+Pearson = ∑(
+
+https://www.jeffknupp.com/blog/2013/04/07/improve-your-python-yield-and-generators-explained/
+
+Generator — WHY? Not stored in memory
+
+
+
+</Text>
+        </Document>
+        <Document ID="76">
+            <Title>bash commands</Title>
+            <Text>sudo apt-get install ncdu
+ncdu /  (to see space allocation)
+
+Determine amount of space
+df -h
+
+Show first few lines of file in terminal
+less review_data2.csv</Text>
+        </Document>
+        <Document ID="91">
+            <Title>[ProfileCreate] Generating default config file: u'/home</Title>
+            <Text>[ProfileCreate] Generating default config file: u'/home/ubuntu/.ipython/profile_nbserver/ipython_config.py'
+[ProfileCreate] Generating default config file: u'/home/ubuntu/.ipython/profile_nbserver/ipython_kernel_config.py'</Text>
+        </Document>
+        <Document ID="84">
+            <Title>Ents</Title>
+            <Text>Ents
+
+Machine learning 
+Iqram
+
+
+Hiring : Contracters - 
+&gt;&gt; Sentence classification problem
+&gt;&gt; Wow them: crazy features: 
+Tom talking —&gt; convert to text  
+
+ML
+1. Useless in text format: we want to know who spoke: 
+2. Separate what is a sentence
+3. Summary of  conversation
+
+
+</Text>
+        </Document>
+        <Document ID="77">
+            <Title>Anaconda on cloud</Title>
+            <Text>Wget https://3230d63b5fc54e62148e-c95ac804525aac4b6dba79b00b39d1d3.ssl.cf1.rackcdn.com/Anaconda2-2.5.0-Linux-x86_64.sh</Text>
+        </Document>
+        <Document ID="78">
+            <Title>psql database cloud</Title>
+            <Text>CREATE TABLE yelp_reviews (
+    user_id TEXT,
+    review_id TEXT,
+    text TEXT,
+    cool INT,
+    business_id TEXT,
+    funny INT,
+    stars INT,
+    date TEXT, 
+    type TEXT,
+    useful INT
+);
+
+copy yelp_reviews FROM '/home/ingrid/yelp/review_data2.csv' DELIMITER ',' CSV HEADER;
+
+Ctrl +D stands for end of file (exits out of most things including the shell itself!!)
+
+Connect to specific database
+http://stackoverflow.com/questions/3949876/how-to-switch-databases-in-psql
+\connect DBNAME
+</Text>
+        </Document>
+        <Document ID="92">
+            <Title>Viterbi based dynamic programming al-</Title>
+            <Text>Viterbi based dynamic programming algorithm.
+</Text>
+        </Document>
+        <Document ID="11">
+            <Title>Title Page</Title>
+            <Synopsis>Title page to the manuscript.</Synopsis>
+            <Text>Ingrid Spielman
+Your Address
+
+
+
+Your phone number
+ingspi@gmail.com
+
+(Your agent’s name)
+(Your agent’s address)
+&lt;$wc100&gt; words
+
+
+
+
+
+
+
+
+
+
+&lt;$projecttitle&gt;
+
+by &lt;$fullname&gt;</Text>
+            <Notes>This is the title page of the manuscript. Note that “Compile As-Is” is ticked - this ensures that the title page’s formatting doesn’t get changed during the Compile process, even though the formatting of other text documents will be overridden to use a standard 12-point manuscript font.
+
+The &lt;$projecttitle&gt; and &lt;$fullname&gt; tags get replaced with the information set in Project &gt; Meta-Data Settings… &gt; Project Properties. You can edit those settings or just replace this text altogether. (Other information is taken from Address Book when the project is created.)</Notes>
+        </Document>
+        <Document ID="85">
+            <Title>search NCBI</Title>
+            <Text>kosher[All Fields] AND hasabstract[text]
+
+http://www.ncbi.nlm.nih.gov/books/NBK25500/
+
+http://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&amp;term=science[journal]+AND+breast+cancer+AND+2008[pdat]&amp;usehistory=y
+</Text>
+        </Document>
+        <Document ID="86">
+            <Title>W8D3</Title>
+            <Text>Clustering
+Agglomerative hierarchical clustering 
+(you find closest points and make them into clusters, next iteration you find points closest to that cluster and add it, or combine clusters) each iteration you have fewer and fewer clusters)
+
+2 parameters
+Affinity and linkage
+Linkage (might use fartherest point to compute and outliers are influencial
+
+
+Jacard distance between things that contain the same thing but frequency might matter
+
+DBSCan: only look at points within that distance measure and we say how many points have to be within that area or space in order for it to be part of this cluster…. Or candidates. Once you make your cluster you go to all points made from that cluster and apply the same rule. If there aren’t enough points around a point that was originally added, then its considered a noise point within the cluster (not same amount of connectivity or centrality as other clusters)  as u reduce the distance you get more clusters….  Use this by doing from sklearn.cluster import DBSCAN
+
+DRAWBACK!
+(Not working well on multiple scales of clustering
+DBSCAN is great but if the clusters are different densities or sizes, dbscan wont see the clusters successfully 
+
+Optics? Dbscan hierarchical. 
+
+metric can be euclidean etc… 
+
+
+DBSCAN with cosine similarity
+TFIDF or CountVectorizer for these clusters
+ - Very different types of clusters
+ - Count vectorizer ?? 
+Tfidf loses repeat words 
+
+
+Euclidean requires NORMALIZED DATA
+
+MEAN SHIFT…. ?
+
+Creating a historgrame in multidementional space and the size of the bin or bandwidth matters
+Kernel, bandwidth, distirbution function
+
+Non-parametric density estimation
+Kernel density estimation
+
+Simple: histogram
+Bandwidth is each bar or bin, the size of that is the bandiwth (the size of the bin)
+As you decrease the bandwidth you wont see the true clusters so you need to tune it. 
+
+From sklearn.cluster import MeanShift
+
+
+Pair problem is 2(x+y/100) - 1/100 = y + x/100
+
+OR
+
+2y - 100 = x-1
+2x + 1 = y</Text>
+        </Document>
+        <Document ID="93">
+            <Title>w9d1</Title>
+            <Text>Bary centric coordinates
+How to show a point is in a triangle
+
+There are other things …… 
+
+
+Domain, MC
+A. Problem : pca, 
+
+B. Solution
+
+C. Implementation
+
+Tool set (aws, python) — (getting data) shaping (machine learning (output, presentation d3 tablau
+
+
+Hadoop and map reduce
+
+
+The amount of data is growing at an exponential rate… data in zettabytes
+What is memory vs computational issues
+
+Big data vs datascience (broader term… coming up with something useful pertaining to small or big data)
+
+
+Paper published on mapreduced…. Yahoo came out wiht 1000 node cluster
+
+HDFS and Mapreduce
+Hdfs is a framework for distributing really large files among different machines
+Each data chunk is on 3 different servers, there are duplicates in case something breaks
+One main guy who keeps track of anything
+
+HDFS
+
+Hadoop is just a set of libraries kind of useed internally
+
+Yarn, resource management system (system admin would deal with this)
+Datascienctists mostly need to know where stuff is sitting (HDFS
+
+1. Set of libraries (common) with hadoop commands
+2. Yarn (research manager)
+3. HDFS (how stored and architecture)
+4. Map reduce (making It quicker)
+
+This is a framework for dealing with large amounts of data. 
+
+
+
+MapReduce 
+Mapreduce is made up of two functions map and reduce
+
+Map : load raw data sitting on different servers, filter and transform
+Output a key value pair
+
+Take each key value pair and the other server aggregates them by key
+
+
+Put some map code on each node and start your computation so that the data doesn’t have to move from it’s current location
+
+Sort and shuffle the key values so that now it knows all the keys from all these things go to the same reducer. Now all ‘apples’ sit on the same node…. 
+
+The bottleneck can be taking the output and putting it back into hdfs (if its an iterative prcess)
+Arcitecture problems
+Optimal scheduling has to be done 
+
+
+
+Hive is doing queries or very like-sql on data
+Pig - pig latin - etl processes
+Hbase, 
+Sqoop (Sql to hadoop) relational database to hdfs
+Avro (seriealize data…)
+
+Use apache spark for iterative processess
+
+
+Anomaly detection — 
+
+You should be asking them who you will be interviewing with and what kind of questions they might ask 
+
+Make a presentation earlier in the process and meet goal of what you want to present
+
+(Ranking over possible influencers for brand)
+(
+</Text>
+        </Document>
+        <Document ID="12">
+            <Title>Non-Fiction Format</Title>
+            <Text>GENERAL NON-FICTION (STANDARD MANUSCRIPT FORMAT)
+
+About This Template
+When compiled (File &gt; Compile), this project will generate a document in the standard manuscript format used for many types of non-fiction.
+
+How To Use This Template
+	•	Edit the Title Page document to ensure it contains the correct information.
+	•	Create a new folder for each chapter and title each folder with the name of the chapter. If you don’t intend to use chapter names, just use something descriptive that tells you what the chapter is about. (You do not need to title the folders “Chapter One” and so on, as chapter numbering will be taken care of automatically during the Compile process.) The first chapter folder has been created for you with the placeholder title “Chapter Subtitle”.
+	•	Create a new text document for each sub-section within the chapter folders. (Upon export or print, these sub-sections will be separated with the “#” character.)
+	•	If you don’t require a foreword, move the “Foreword” document to the Trash folder. Alternatively, rename it “Preface” or “Introduction” if you prefer. If you would rather the foreword come after the table of contents - as is sometimes the case - drag the “Foreword” document and drop it below the “Contents” document.
+	•	Before compiling, to create your table of contents, simply select all documents you wish to be included in the contents listing (usually this will be the “Foreword”, all chapter folders, and “Endnotes”, but not the individual sections inside chapter folders), then go to Edit &gt; Copy Special &gt; Copy Documents as ToC. Then paste into the “Contents” document (use Edit &gt; Paste and Match Style to paste without the dotted underline between the chapter names and page numbers). The resulting linked text and page number tags will be replaced with the final chapter names and page numbers in the compiled document. You don’t need to do this every time you compile, just when chapters have been added, deleted, renamed or moved around. (Note to Microsoft Word users: If you export to Word, you may need to generate a print preview in Word to force the page numbers to show up correctly - they may appear as question marks before doing so.)
+	•	If you have no footnotes or endnotes in your text, be sure to delete the “Endnotes” document.
+	•	“Notes” and “Ideas” folders have been provided for your convenience, although you can replace them or create different top-level folders for your research materials if necessary (these are just regular folders that have had custom icons assigned to them using the Documents &gt; Change Icon feature.)
+	•	Compile your manuscript into standard manuscript format by selecting File &gt; Compile.
+
+Tables and Figures
+If you need to use tables or figures in your manuscript, you can refer to them using the following tags, replacing “KEYWORD” with a unique word that identifies your table or figure.
+
+!fig(KEYWORD)
+!table(KEYWORD)
+
+For instance, consider the following text, which makes use of such tags.
+
+Table !table(sales): Sales 2011
+Table !table(dates): Shipment dates
+Figure !fig(skeleton): The skeleton of the gnu.
+Figure !fig(malcolmreynolds): The second coolest character in Firefly.
+
+… (For sales figures, see table !table(sales))… For shipment dates, see table !table(dates)… where he discovered the skeleton of a gnarled gnu (see figure !fig(skeleton))… Chronicles providing a similar role, albeit without the Castle actor (see figure !fig(malcolmreynolds)).
+
+In the compiled document, the above text would look like this:
+
+Table 1: Sales 2011
+Table 2: Shipment dates
+Figure 1: The skeleton of the gnu.
+Figure 2: The second coolest character in Firefly.
+
+… (For sales figures, see table 1)… For shipment dates, see table 2… where he discovered the skeleton of a gnarled gnu (see figure 1)… Chronicles providing a similar role, albeit without the Castle actor (see figure 2).
+
+Making Changes
+There are various minor changes you can make to the settings to tweak this template so that it better suits your needs, as follows:
+	•	Chapter subtitles: If you don’t want to include the names of your chapter folders below the chapter numbering text in the compiled document, go to the “Formatting” pane in the Compile sheet and deselect “Title” in the list of elements to include.
+	•	Page header: You can edit the page header in the “Page Settings” pane of the Compile sheet.
+	•	Font: Use “Quick Font Override” in Compile to change the font used throughout the final document.
+	•	Working with chapters instead of smaller sub-sections: By default, this project is set up so that you write each sub-section of a chapter as a separate text document. If you don’t like to break things up quite that much, though, you can equally write a whole chapter in a single text document within each “Chapter” folder.
+
+Sample Document
+See the “Sample MS” PDF file in the Research folder for an example of a document that has been created using this template.
+
+Final Note
+Scrivener project templates are flexible and are not intended to restrict you to a particular workflow. You can change, delete or move the files and folders contained in the template, and you can create your own templates by setting up a skeletal project with the files, folders and settings you would like to use for new projects and using File &gt; Save As Template.</Text>
+        </Document>
+        <Document ID="79">
+            <Title>w8D1: Topic Modeling</Title>
+            <Text>Themes within text: 
+Distribution of possible words (probability distribution over all possible words)
+
+
+Lets use an algorithm spcifically developed to find topics
+LDA = Andrew ing, david bli, michael jordan
+Latent Dirilicht allocation
+
+Gibbs Sampling
+
+
+In writing, we choose a topic, and then write words from the distrubution of words in that topic
+
+Generative model (can we understand how this data itself was generated)
+
+Alpha parameter = corupus
+Theta = each doc
+Zeta = each word (topic)
+W = each specific word
+
+
+Requires dimensionality reduction (clustering, classifying)
+
+</Text>
+        </Document>
+        <Document ID="87">
+            <Title>Scrivener Issues</Title>
+            <Text>Git version control w scrivener
+
+Latex with scrivener
+http://timbrandes.com/blog/2012/02/28/howto-write-your-thesis-in-latex-using-scrivener-2-multimarkdown-3-and-bibdesk/</Text>
+        </Document>
+        <Document ID="94">
+            <Title>Ed Podojil, NY Times</Title>
+            <Text>Ed Podojil, NY Times
+Working with teams
+Edward.podojil@nytimes.com
+@Podopie
+
+
+!. Listen to everyone you work with
+2. Figure out what they really mean
+
+You work with a lot of people and you have to understand how to work with a lot of people.  
+
+Dtakind, homejoy, minibar, animoto, 
+Bayesian processing, logistic regression
+Babysitting hadoop: 
+
+How to trust data!!!?   HOW DO YOU TRUST THE DATA THATS COMING IN?  (How do we validate it, how do we write unit tests (to make sure data coming in is as we expect it to look like, having some way to track data makes a magnitude of difference)
+	•	Data analytics ; what trends exist in user behavior, du users fall into natural bahavior segments?
+	•	Data governance: how do we trust the data coming in? What kind of data is missing in order to do good analysis?
+	⁃	Verifying data: a few things you can do:
+	⁃	User interaction data for example, build out selenium test to validate that certain javascript runs
+	⁃	Keep track of how many files were pushed to s3, where they pushed somewhere else. Following the process
+	⁃	Algorithmic stuff… if all user ids are an md5hash, validate that it equates back to what it was supposed to be. Eg all the values were hex
+	⁃	Marrying the data: using different datasets that have the same goal: they should be giving similar results
+	⁃	Google analytics data to own internal data sources, looking at differences (differentials) to validate that things are looking like what they should. 
+	⁃	Building out trends: eg. Time series analysis
+	⁃	Eg. At homejow, how would arkinging imact new users hitting the site. Build a baseline model. Whenever actual new users were higher or lower than 3% the data looks wonky… was it a dos attack or a lot of robots are hitting us?
+	•	Data engineering: how do we tie all the data sources together effectively to ask complicated questions?
+	⁃	Hadoop is a common approach
+	⁃	Have to understand how to build the etl’s out….. 
+	⁃	Instead of modeling he explained why the data sucks and how it can be changed  
+	⁃	Knowing how to shape your data, where to put it and connect all the dots
+
+	•	Data science: how do we create products for users given data?
+
+Working within a datascience time: 8 people at nytimes. 
+	 -  They are data engineering, deep insights, data analytics, a team asks X but they might be more interested in Y
+	 - The 1% of data science… recommendations, providing structure to unstructured data… etc.
+
+They want more clicks, but more specifically, did the promotion on Facebook they used actually work?  (See — sometimes the cause is the real thing we should look at and not the effect)
+
+People expect you to be an expert in efferything, but of course, you aren’t
+
+The nice part of course is that you fit in the data science spectrum: warby parker director at data science put this awesome 3 graph   (bi analysts, applied statiticians, data engineers)
+You need to understand where you fit in and how the team complements that. 
+
+
+When you work with other teams:
+Common and a mistake… to involve data earlier in the project process:
+Can data science provide a solution? Should it? (Is this really a ml problem or just a dashboard problem or a statistics problem… there are a lot of ways to approach the problem. Is this a reasonable approach? 
+What methodologies are present for data collection? How stale does data get? (If a user is going to prescribe… you might use a lot of data…..   
+Are the goals right? What caveats exist?    
+Making sure that you get involved earlier so that you can think a lot more about the dat models taht are present and they can bild a much better model. (Data scientists work most closely with the data engineers…     ) DONT DUPLICATE EFFORTS… duh…. Engineers vs scientists…. 
+
+Very easy for a data science team to be solving the same problema s a group of engineers
+Work with and provide insight on approach isntead of building your own toll and introducing engpoints to the engineers (does this scale?)
+ - Eg. We do a lot of recirculation to encourage people to keep on clicking…. They had two different modeuls that raised th same recommendations… do ew need duplicates of the same link? Does that raise click rates?
+
+Think about if the data is already there… what is the taxonomy or the data model around it?  
+
+
+Product and project management:
+Being responsible for your own work and setting timelines.
+He hasn’t worked on teams with a project manager, they dont understand what has to be done. So you have to set the golas really clearly with the team that you are workign with. A lot of good wins if you do this
+
+Hypothesize! What are your options? Can you balance work against gains?
+Eg. Pitch 4 options….   Scale of work from nothing to a lot, how much a person would gain from this work. 
+
+User timing: where is our gretest opportunity… a lot of people engage within the first 5-10 seconds. 
+
+
+HACK!
+Its important to just get something out there…. Get dataset together you have three features, time article published, desk it belonged to, was it put on facebook… you bild it, get model going… put it up as a slack robot?? And every hour it recommends something (THIS IS AN MVP) it helps service users as you are trying to build mroe complicated tools
+
+Proof of concept idea:
+Dedicated time to reelase an early demo / version:
+- Get something out there to use
+  =- Quick and dirty api
+ - Slack bot?
+
+First proof of concept and then REFINE:
+… Now I want to start recommending things to people
+Ocelot suggestions?
+
+
+Start getting feed back and understanding key metrics: is what your predictions do make a difference?  Even if it was a dashboard, you could easily go into the logs and see how often people are coming ot the dashboard…. If you can say spcifically how things have improved… you can guage etc..
+
+
+Schedule meetings wiht your clients. 
+Iterating, fixing bugs, making it faster, improve dataflow… if this is internally driven? How can you show that your work made a difference?
+Iterate: fix bugs, imrpove data flow / accuracies
+
+Try not to think more than 2-3 weeks ahead
+
+
+Research and followup: gather feedback from your users, maintain metrics, show
+
+Weekly sprint, biweekly sprint.
+
+
+FINAL THING: MOVE ON.
+Your role as a datascientist can be to get something out there… build an algorithm, build a product…. You can’t sit on a project forever. The longest he’s ever thought was an 8 week project… what does the handoff look like, what does my deliverable look like, who am I handing it to, what can they do with it?
+
+Being able to get that model built to be useful is 90% of the solution. An engineer should be able to look at code and know what you’re doing. They should be able to work with it themselves so you can move on.  You don’t want to sit on the same project all day: it can turn into a problem!
+
+ETL: extract transform load:    — no one knew how to use the product and that was his fault for not training people on it. Hand off to someone else so they can manage it and take care of it while you move on to something else. 
+
+
+ I like to probe interviewees on their favorite machine learning algorithm: explain it to me as a fellow Data Scientist, and then explain it to me as if I’m the CEO
+
+Figure out how many papers to deliver to coffee shops to optimize for costs
+
+</Text>
+        </Document>
+        <Document ID="88">
+            <Title>Off the shelf algorithms (speech to text)</Title>
+            <Text>Off the shelf algorithms (speech to text)
+Very difficult to set up and trian … google an apple ahve their apis available and they work reallywell
+
+
+Information extraction , dependency parsing…. Pairs of dependencies, 
+
+Word imbeddings, dependency parsing
+Twitter: 
+- Normalized (divide by total number of word
+
+Tf-idf normalization : unique 
+characteristics between candidates
+
+Sort bag of words by most frequent to least frequent (vary length of vector)
+
+Summerization : topic modeling, 
+
+
+5 words left and right, and sum all vectors together and assign new 
+Similar words are used in similar context so that averaging makes them land up being similar. 
+
+
+Classification — 
+
+
+Word imbeddings: matrix represents tweet etc. 
+(List of lists) sum by column and collapse into single vector
+
+Tomas nicolov (word imbeddings…..) word2vec 
+
+</Text>
+        </Document>
+        <Document ID="95">
+            <Title>w9d2</Title>
+            <Text>Hadoop is a cheaper way than databases
+
+Wonderful replication (makes it slow)
+
+Nodes and name nodes and knows where it leives and that is the overhead of hadoop
+Companies are entrenched in hadoop… they aren’t able to pick up spark…. They are stuck! Its really hard to switch</Text>
+        </Document>
+        <Document ID="89">
+            <Title>Google Page Ranking</Title>
+            <Synopsis>Ozzie</Synopsis>
+            <Text>How to organize the web?
+- Categorize stuff!
+Another option is to do search (remember ask jeeves?)
+
+Who to trust?
+- Strustworthy pages may point to another!
+What is the best answer fo rquery newspaper?
+Something that knows about something will point to more of something
+
+1996 (google begins)
+
+
+Soooo
+Links as votes, page is more important if it has more votes
+Incoming links are votes
+Not all votes are the same. The larger you are the larger your votes matter
+
+
+
+Solveing the flow equation where they all add up to 1
+
+
+Gaussian ellimination?
+Spider traps?
+Dead ends?
+
+
+LinkedIn uses page rank for skills and endorsements (whos endorsing you?)  If someone good endorses you, its weighted more heavily. 
+
+
+</Text>
+        </Document>
+        <Document ID="96">
+            <Title>Ebay talk</Title>
+            <Text>Easy for seller to put item on site, data scientists can easily use that to find simliar items
+As a merchandiser team, we want to provide a way to find similar items
+Maybe item you clicked on is not good enough for you (not good price, used etc…) 
+Ebay and seller and buyer want to help complete the purchase,   product id with database
+A lot of items are unique, rare, do not have a product id
+
+Eg. If you want to list a tshirt, pen, dres, etc… we still need to be able to group these items
+So we can use the title and the image to help do this. 
+The viewpoint etc…. Makes it hard to find similar items… using word 2 vecs, neural networks… enabling us to find similar items. 
+We try to provide complimentary items…. Things that are usually bought together with the alreay purchased item…. We have to use some kind o ffuzzy representation made up of by the image and the title. 
+We are looking for engineers, machine learning engineers, they need deep learning at EBAY. 
+
+
+Meeting sponsors are altoros and ebay: 
+In video, center…. Power the computers in car driving…. Nvidia gpu
+http://www.nvidia.com/object/geforce_family.html
+
+DEEP LEARNING topics
+Financial services
+Embedded systems (gpus, autonomous cars)
+Health care applications
+
+Best practices…. Into production
+Loading and unloading models…. 
+
+San Hose gpu conference hosted by envidia
+
+DaVinci - deep learning nlp backgrounds
+DEV.io…
+
+Rafal Jozefowicz from google brain: tensorflow under the covers
+NLP applications (using neural networks) Looking to hire
+
+Tensor flow is an open source software library for numerical computation using data flow graphs
+Data transformation pipeline…. It adds a layer of abstraction. Separates graph creation from computations… you can more easily run this part of graph on the graphics card or other machine. This separation of graph creation and computation is valuable
+(Labels + (Biases + (weights + examples) —&gt; Matmul )—&gt; add —&gt; RElu —&gt; Xent)
+
+Key features are deep flexivility, true prortability, connet research and production, auto differentation, language options, ……
+
+Written in C++, python front end as well…. 
+
+Entropy, Tensor board?
+
+Tensorflow.githubb.io/serving…. Abstraction to help run experiments in production
+
+Eg. Language modeling: good/correct sentences should get higher probabilities than wrong ones
+It is a sequential  problem: what possible things user might have said…..
+Use speech recognition, machine translation , spelling correction
+
+
+
+Exploring the limits of language modeling: arxiv.org/abs/1602.02410
+
+Recurrent neural network (RNN, or long short term meory LSTM….  (THE model is quite slow)
+Asyncroneous stochastic training by breaking the dataset into pieces and hten sending the parameters computed from each machine back and somehow combining htem back…. (Grid search?)
+
+perplexicity vs model size ….. 
+
+Rafa is rafjoz@gmail.com
+
+Good for parallelizable processes (skitflow? )
+https://github.com/tensorflow/skflow
+
+
+Kohonen, self organizing maps
+Lstms, gru vs lstm??
+https://en.wikipedia.org/wiki/Self-organizing_map
+
+How do they work
+1. Initialize random weights for each node in an m by n grid
+2. Select random training vector and identify a node with wieights that are clostest to the training vector…. This node is known as the best matching unit (BMU)
+3. Find all nodes within neighborhood of bmu and adjust their weights to mak them more smiilar to the BMU
+4. Adjust the laerning rate and neighborhood size
+5. Repeat steps 2 through 4 for a predetermined # of iterations. 
+
+Heat map over time or something for each 
+
+@Keithdavisiii
+Iamthevastidledhitchiker.github.io
+</Text>
+        </Document>
+        <Document ID="100">
+            <Title>w9d4</Title>
+            <Text>Bias and variance
+
+Naive Bayes (probability of y given x)
+Logistic regression (y given x) with sigmoid function
+
+
+
+
+
+SPARK
+Originally written in scala, we use pyspark
+
+Look up on stackoverflow on how to remove spark logs
+We hava a jvm waiting on each node waiting to be run
+It has a faster processing time than hadoop
+
+
+RDD is the main thing in spark (if you understand this, you understand spark and why its awesome and faster than hadoop)
+
+There are three reasons… 
+1. Partitioning
+2. Laziness
+	Results not computed right away	spark remembers what we’ve asked of it
+	
+3. Caching
+
+If we had a 1000 node cluster, we wouldn’t want 4 partitions because then you wouldn’t be using all 1000 nodes. 
+
+But if you have a thousand node clusters / partitions but very little data, that would be bad too… all gains lost in crazy overhead of this 
+
+Spark has it’s own standalone manager
+You cude use yarn or mesos 
+
+Name node or master node assigns stuff to worker nodes. 
+
+
+df = sqlContext.load(source="com.databricks.spark.csv", header="true", path ='/Users/ingrid/Downloads/AllstarFull.csv')
+
+
+Movie recommenders , alternating least squares, svd’s
+
+
+You solve vector for movie 
+
+Sochastic gradient descent…. Alternating least squares… solve for movies from users and then users from movies
+
+
+PcoA??
+</Text>
+        </Document>
+        <Document ID="97">
+            <Title>Untitled</Title>
+        </Document>
+        <Document ID="30">
+            <Title>Foreword</Title>
+        </Document>
+        <Document ID="98">
+            <Title>Price Negociation</Title>
+            <Text>The offers:
+
+Verbal offers are soft, discussed over the phone or in person. 
+Resist accepting verbal offers… always request it in writing!
+
+Say: thanks so much, I’m gracious and happy to get the written offer
+Once I have a written offer, we can go from there. 
+Ok that’s great, can we add that to the written offer
+Eg. You are my top choice, take some time to make an informed decision…
+
+
+Ok wrttien offer:
+Start date, base salary, perks, fringe benefits (gym membership …. What class you fly in etc)
+You want to have a list of q..s
+
+Insurance is important, 
+
+Compare to another offer in order to leverage
+
+Seek council!  
+Be in a position to accept or decline… 
+
+
+Understand who you’re negociating with. 
+
+Good values (comfortable culture) (what does this mean?), mentorship, what are your numbers
+
+Higher expectations come with a higher salary
+
+Assertive, firm, confident. … 
+
+Always give a range  (if you give a number they could screen you out)
+
+Get a sense of timeline for the role, how soon do they want to fill the role… u have more leverage if you’re looking to fill this immediately. 
+
+Are they replacing someone or is this role new…… if the company is growing, do they know what they want for that… existiing range, if you’re replacing someone, then the duties are already in place. 
+
+Google, salary.com, payscale.com, career’s team, recruiter, metis alumn, glassdoor.com, friends, ….use these resources
+
+Work experience, education, aptitude/potential
+Job: duties and responsabilities
+Team members making
+Size and budget
+Type of company
+
+Measure equity…. 
+
+Data scientist level 1: 91K, level 2: 104.5K, level 3: 132K
+
+Negotiate
+What if they aren’t flexible:
+ - Put bonus onto salary. Never be pressured unless you are going to be homeless
+You’ are allowed to ask “can you give me some intuition into why you aren’t flexible”
+
+You’re not going to land your dream job out of metis
+How would this job set you up for your next job. 
+
+
+If you get what you want, ask for more…. !!!!
+
+
+Thank you so much, I’m really excited about joining buzzfeed. I would like to get to (not hoping) how can we make this happen… its all about the tone
+You should know why you are negotiating for more
+
+
+RESIST rushing an offer, being too brash or too timid, lying, accepting the first offer
+
+If they ask for your previous salary, ask them to explain why
+
+
+Final step, reflection:
+Assess the botch… it wasn’t the offer that I wanted. Or walking away or accept
+
+
+3 ways to find
+Recruiter, networking, online
+
+
+Not always easy to find the technical recruiters at a compnay…….
+So how?
+
+GOOGLE: 
+Type in site: linkedin.com “company name” technical recruiters
+
+1. During salary negociation (its as much aninterview for u as them)  (intangeable things they can offer: benefits, discounts, learning and professional growth, networking)
+ bb. Make sure you feel respected and valued through the process ( you want to work for someone who is able to negociate with you… right?)
+
+2. Worth having a lawyer look at the contract (maybe not now) but for later jobs… thee are little things here and there. Like ownership of code. You may create something you want to be able to take with you and have a once over by someone who is an expert with legal language. 
+
+</Text>
+        </Document>
+        <Document ID="31">
+            <Title>Class Notes: W7D2</Title>
+            <Synopsis>KNN and IF-IDF text search</Synopsis>
+            <Text>Supervised learning, data with correct answer —&gt; model
+unlabeled data —&gt; structure  
+	1.	determine clustering of classes
+	2.	can we find groups similar to one another
+	3.	latent topics or structure that weren’t obvious before
+	4.	density estimation 
+unlabeled data (no answers) —&gt; structure —&gt; supervised model
+
+inertia, sum of square distances in each cluster (low inertia = high density)
+
+we need to run this multiple times because there may be a local minimum
+
+Kmeans++ is the idea that you can choose the first cluster centroid randomly, but then choose subsequent once that are far from that point… this makes reaching an equilibrium a bit faster. 
+
+how do we know the K. use the inertia. the inertia goes down as you increase k…. 
+or use cross validation, or does it make sense based on the question you’re trying to answer
+
+FEATURES MUST BE SCALED!
+&gt;&gt; sklearn.preprocessing.scale(x)
+
+
+
+Typically, topic models are evaluated in 
+the following way. First, hold out a sub-
+set of your corpus as the test set. Then, 
+fit a variety of topic models to the rest of 
+the corpus and approximate a measure 
+of  model  fit  (for  example,  probability)  
+for  each  trained  model  on  the  test  set.  
+Finally, choose the model that achieves 
+the best held-out performance
+
+KMEANS Clustering
+	•	What do you need?
+	•	labelled dataset
+	•	distance metric (euclidean default, minkowski space)
+	•	scaled variables (how do you scale categorically?)
+	•	choice of K!
+	•	How is model fitting accomplished?
+	•	lazy algorithm — NO TRAINING and just a declaration of your parameters
+	•	
+	•	How are model predictions made?
+	•	majority rule? equal weighting or weighted…errr by distance. the shorter the distance, the larger the weight
+	•	What effect does the choice of K have?
+	•	
+	•	How do you choose K?
+	•	What other choices affect predictions?
+	•	radius, distance metric, 
+	•	How does KNN compare to other models?
+	•	good for multi class problems, fast to train and slow to predict. 
+	•	non parametric, so it’s not making assumptions about the data (like what kind of distribution)
+	•	it can be appended to many things, recommendation systems, in combination with other …. (used in hand writing recognition, image recognition
+	•	What are KNN's strengths and weaknesses?
+</Text>
+        </Document>
+        <Document ID="101">
+            <Title>Genome Brainstorm</Title>
+            <Text>Pairwise sequence comparison algorithms [1, 2], generative models for protein families [3, 4], and discriminative classifiers [5, 6, 7]. Popular sequence comparison methods such as BLAST.
+
+http://papers.nips.cc/paper/2496-semi-supervised-protein-classification-using-cluster-kernels.pdf
+
+
+Multiclass problems
+— One vs all 
+
+
+
+</Text>
+        </Document>
+        <Document ID="99">
+            <Title>App.run(host=‘0.0.0.0’)</Title>
+            <Text>App.run(host=‘0.0.0.0’)
+
+
+Flask imports….. Session, abort, Flask, g, redirect, url_for, \, 
+
+Keep running on ec2…. 
+
+framing the the problem so that it’s not just an exercise
+Chart lyrics api
+
+</Text>
+        </Document>
+        <Document ID="40">
+            <Title>Investigations</Title>
+        </Document>
+        <Document ID="102">
+            <Title>Sergei</Title>
+            <Text>Preliminary:
+
+
+Talk like youknow, 
+They want your background,, how you think about coding, metaognition
+
+Do you see your work through completion, do you fix things that aren’t quite right even if you dont have to?
+
+You have to be able to communicate and be valuable in other areas
+
+
+Give the impression of 
+
+
+I should have CANNED RESPONSES to a lot of stuff:
+
+An interesting technical problem you solved (how you did it, why you did it)
+An interpersonal conflict you overcame
+Leadership or ownership story (doesn’t have to be technical)
+Story about what you should avhe done differently in a past project (not necessarily technical)
+ - This is a humble bragg  (problem is eg my enthusiasm)
+- Piece of trivia about your favorite language, and something you do and don’t like about said language
+- Whenever you go to a company, have questions prepared about it!!!!! Even if you are not interested in joining them (act like you really want to join them)
+	- How they make money
+     - How they support their mission
+      - There engineering stategies (how they ship code out the door)   …. Scrub, waterfall, agile, the culture around shipping code……
+    - In general nerd out about stuff
+Someone who needs som help along the way bout communicates clearly can be even better than someonw hwo breezes through the questions but doesnt explain what they are doing….
+DONT BE A BLACK BOX!   …
+
+THERE ARE TWO KINDS of technical questions: clean efficient code…. And then the chitchat problem, the interviewer just wants you to talk about something, these questions are often either: 
+	High level system design (how would you build a twitter clone?)
+     Eg. How would you build the internet?
+They want digram, boxes, UML? Points and flow…. System design diagrams
+    Finally trivial problems: what is a lambda in python, (anonymous function)…. 
+You can ask, should we write code for this?
+
+ALWAYS USE “WE”!  Make it feel collaborative……    paper or whiteboard, always choose whiteboard becasue when it comes to sitting down and writing on paper you might be facing eachother and that is combative and not collaborative
+
+THINK OUTLOUD: eg “lets try doing it this way — not sure yet if it’ll work”
+You can collect your thoughts for 20 secs but no longer….. Start talking. VERY IMPORTANT
+If you are stuck, say what you are thinking. Say waht might work. Say what you thought could work and why it doesn’t work. 
+If you can eliminate solutions, it shows you have a depth of knowledge. …. 
+One of the things you thought wouldn’t work, might work…. Esp if interviewer keys in and says “but wait”
+In general this goes for general chit chat questions. If they ask you b
+If someone asks you a trivia question, and you DONT KNOW …. Say you dont know: dont appear to know bout something you dont know!
+Instead say I’m not sure, but I’d guess x because..” The because can involve rulling out implications or pulling examples from other languages or other problems. …. This helps showcase what you know…. 
+They might give you the trapping salesman problem. 
+
+Don’t confidently blurt out an answer right away!!!
+If its right you’ll still have to explain it, and if its wrong you’ll seem reckless
+No one gets points for speed unless its explicit
+
+How to get unstuck? THINK OUTLOUD
+	- Relax: it doesn’t mean you’ve failed, the interviewer usually cares more bout your ability to cleverly poke the problem from a few different angles than your ability to stumble into the correc tanswer. When hope seems lost, keep poking. 
+  - Drawing pictures helps: dontw ast time trying to think in your head, think on the board. 
+ = Solve a simpler version of the problem
+  - Write a naive inefficient brute force solution and optimize it later
+- Wait for a hint (but don’t stare!!)   
+ - Call a helper function and keep moving……..  Say you’ll get back to it
+
+
+OK, so how do you work through it smartly:???
+	- When you’re actually working through the problem:
+ - Think about the bounds on space and runtime (more on that later)
+- Call a a helper function and keep moving again
+If the helper function is trivial you might even get away with never implementing it. 
+
+SPACE vs TIME complexity
+“Hi” n times is constant….   You can think of space and time as two levers… tradeoff between the two… if you can cache something, you can compute something more quickly at the tradeoff of space. 
+Dont worry about syntax…. Because you wont get through the blueprint of the problem… GET THROUGH THE PROBLEM!
+Always leave yourself plenty of room (on the whiteboard you’re using)
+Save of by one chekckking
+USE DESCRIPTIVE VARIABLE NAMES
+Once you’re done with the skeleton of your algorithm……. You clean it up!
+  - Walk through yoursolution by hand, out loud…. With an example input. Eg a positive whole number. 
+- Test edge cases
+	  - Empty set arrays
+      - Single item sets arrays
+      - Zero and negative numbers
+
+Have good tech questions about the company …
+Communicate your thinking, do not assume that anything you write is understood unless they are explicity about what they understand …. And say yes I understand. 
+DONT BE BORING,
+ you should be practicing coding problems. Not using documentation….
+How you have opinions about technical things . 
+
+
+— If you dont talk to a technical person in the whole process — you should not be working there
+
+
+Reservoir is a smple of your stream
+RESERVOIR SAMPLING !!!
+
+Problem 7
+Clustering problem on ip address : 
+(Its not a classification problem. — Its unsupervised)
+User agent… </Text>
+        </Document>
+        <Document ID="27">
+            <Title>Ideas</Title>
+        </Document>
+        <Document ID="34">
+            <Title>Sample MS</Title>
+            <Text>Amy Nonomusse Your manuscript should have your address and contact details on the first page only.
+If you have an agent, your agent's address can be included beneath.
+Non-Fiction Standard Manuscript Format by A. Nonomusse
+1,000 words
+Contents
+Foreword Chapter 1 - Folder Names Become Subtitles Chapter 2 - Another Chapter Folder Endnotes
+3 4 6 8
+NonFiction PDF/Nonomusse
+2
+Foreword
+Non-fiction works often feature a foreword or preface. This usually comes after the table of contents, but not always--sometimes the foreword precedes the table of contents. You should move the "Foreword" document to wherever you want in the "General Non-Fiction" template, rename it to "Preface" or "Introduction", or delete it entirely, depending on your requirements.
+The table of contents is generated using Scrivener's Edit &gt; Copy Special &gt; Copy Documents as ToC feature. You simply select the documents in the binder that you want to include in your table of contents, select "Copy Documents as ToC" from the Edit &gt; Copy Special menu, and then hit Edit &gt; Paste (cmd-V) in the "Contents" document; alternatively, use Edit &gt; Paste and Match Style (shift-opt-cmd-V) to paste without the dotted underline between chapter titles and page numbers. The results won't look much in Scrivener's editor - a bunch of linked text with "&lt;$p&gt;" page number tags after it - but when compiled this will become a proper table of contents using the correct chapter titles. Remember to update your table of contents if you move, add, delete or rename any chapters.
+NonFiction PDF/Nonomusse	3
+Chapter 1 Folder Names Become Subtitles
+Standard manuscript format is often required for non-fiction so that work can easily be read by editors. It allows editors to estimate word count and determine roughly how many pages will be required to produce a book using the page size, style and font used by their house.1 This PDF file was generated using Scrivener's Compile feature and was created using the "General Non-Fiction" project template.
+Manuscripts for full-length books require a separate title page. The author's name, address, telephone number and e-mail address should be shown in the upper-left corner of the title page, single-spaced. The title of the work should appear about half-way down the page. The author's name follows the title on the by-line as the author wants it to appear when published. A real name or pseudonym may be used and may include initials, actual given name or professional designation.
+A table of contents and foreword, preface or introduction may follow the title page, preceding the main text.
+All text should be double-spaced and left-justified with a ragged right margin. Paragraphs should be indented by about five spaces (half an inch) and not separated by an
+NonFiction PDF/Nonomusse	4
+additional blank line. (It used to be traditional to separate each sentence with two spaces, but in these days of word processors this is now less common.) A 12-point font such as Courier, Times New Roman or Arial should be used throughout. In Scrivener, however, you can write using any font and formatting you choose--the "Formatting" pane of the Compile sheet can be used to change the formatting in the compiled document. In the "General Non-Fiction" project template, the Compile settings will deal with changing the font and formatting to those required for standard manuscript format.
+Top, bottom, left and right margins should all be approximately one inch, not allowing for the page header. Each page except for the title page should include a header comprising the author's real surname, the title of the work (or a key word from the title), and the page number. In Scrivener, all of this is handled in the "Page Settings" pane of the Compile sheet.
+# Section breaks within chapters are indicated with the hash character. Do not simply
+add an extra line space as this can be missed by the typesetter. The "Separators" pane of Scrivener's Compile sheet can handle this for you if you are writing the sections within each chapter as separate text documents.
+Many editors prefer italics to be indicated by underlining, which can be achieved by ticking "Convert italics to underlines" in the "Transformations" pane of Compile. This is ticked by default, so be sure to un-tick it if you require italic text in the final manuscript.
+NonFiction PDF/Nonomusse	5
+Chapter 2 Another Chapter Folder
+Begin each new chapter on a new page like this with the chapter number about a third of the way down the page. In Scrivener, this can all be dealt with in the Compile settings. The "Separators" pane of the Compile sheet can be set to start a new page for each chapter folder, and the "Formatting" pane can be used to add page padding at the top of the new page and insert the chapter number (the latter using the "Level Settings"). All of this has already been done for you in the "General Non-Fiction" project template.
+Although it is often said that writers should not use the word-count features of their computers to determine the number of words in a manuscript, most publishers and editors will happily accept a word processor word count these days. In Scrivener, you can insert a word count of your manuscript by using Edit &gt; Insert &gt; Draft Word Count (for a manuscript, you may wish to have the word count rounded to the nearest 100, in which case select Edit &gt; Insert &gt; Draft Word Count &gt; Rounded To Nearest 100--this feature is used on the title page of this manuscript, in fact). Note that the actual word count will not be inserted, but a tag that will be substituted for the word count upon export or print.
+#
+NonFiction PDF/Nonomusse	6
+Footnotes should generally be numbered sequentially throughout the manuscript and appear as endnotes at the very end.2 However, different editors and publishers have different requirements when it comes to footnotes, so you should always check the submission guidelines.3
+In reality, the formatting of a manuscript is often only really crucial when submitting directly to a publisher--first time authors will usually submit to an agent first, and agents are often less picky about format and will point you in the right direction before submitting your work to a publisher.
+NonFiction PDF/Nonomusse	7
+Endnotes
+1. Much of the information contained in this document is based on a description of novel manuscript format by Matt Carless for the BBC Writers' Room website (http:// www.bbc.co.uk/writersroom), along with various web resources describing non-fiction manuscript format (the basics of standard manuscript format is commonly used for both fiction and non-fiction).
+2. Useful information about non-fiction manuscript formatting was also taken from this web page: http://calemccaskey.blogspot.com/2011/05/how-to-prepare-non-fiction-manuscript.html 3. Note that if you require more advanced footnote and endnote layout, or if you require indexes, you should compile to RTF format and open the generated RTF file in your word processor of choice for a final pass.
+NonFiction PDF/Nonomusse	8
+</Text>
+        </Document>
+        <Document ID="41">
+            <Title>Section</Title>
+        </Document>
+        <Document ID="42">
+            <Title>Justin: Workflow</Title>
+            <Synopsis>Task Flow structure</Synopsis>
+            <Text>Task que structure
+
+
+HTTP request response cycle
+celery is the message broker
+and rabbit q is the sue
+
+brew install rabbitmq 
+pip install celery
+
+from tasks import add</Text>
+        </Document>
+        <Document ID="28">
+            <Title>Notes</Title>
+        </Document>
+        <Document ID="35">
+            <Title>Job Search</Title>
+            <Synopsis>Jen’s Lectures on resume, </Synopsis>
+            <Text>Dice, angles ice, the ladders
+job aq: online, network, notices
+
+
+stay organized!
+
+create your narrative: what lead you to data science?
+what are you interested in the position, why are you qualified for this position, what are thee important qualities a DS should have and Wy?
+what is metis, how was it prepared you, what will you excel first 30 days, what areas will you need guidance
+be prepared to talk through 2 projects and include, motivation approach what you learned and optimizations
+
+for the metis part, capture the pace of the program. the rigor, the difficult. 
+
+WHAT PROBLEM WOULD YOU WANT TO SOLVE FOR US!
+
+
+DRESS COE: bring copy of resume, dress for success, get interview details, know where you’re going, leave early to arrive early, turn off your cell, be polite to everyone, be confident
+
+problems (take homes)
+case studies prep
+
+
+common mistakes : lack of eye contact or not smiling
+
+excitement and enthusiasm and authenticity, you’ve done your hw, ask good q, particular for a DS, confidence and grit
+follow up
+
+first impressions aren’t the end. even if you don’t like the person you talk to, it might not be what the company really is. 
+
+behaving professional!!!!
+
+thank you within 24hrs. send each person you met a thank you letter. </Text>
+        </Document>
+        <Document ID="50">
+            <Title>big data in education</Title>
+            <Text>Zone of proximal Development
+Keep students in that area == learner outcomes. 
+
+it is like minority report (predictive analytics)
+
+
+“just for me” is what we need in education
+
+develop efficiency, efficacy for learner outcome, engagement
+learners are more engaged
+improved adoption and implementation
+
+1 = before
+2 = with digital products
+
+phases of learning experience
+	1. setting expectations
+	⁃	objective setting, reassessment, diagnostic for placement
+	⁃	computer adaptive test
+	1.	reading instructions
+	2.	content acquisition tools, in class lectures, discussion, video
+	3.	cognitive tutoring
+	2.	formative assessment (conceptual understanding)
+	1.	interactive quizzes
+	2.	adaptive pathways cognitive tutoring
+	3.	Formative assessment (procedural application)
+	1.	practice simulations, language learning , writing
+	2.	adaptive practice computer adaptive test
+	4.	review /study
+	1.	flashcards, learning hits, test preps
+	2.	analytics, analytics, analytics
+	5.	summative assessment
+	1.	midterms finals, unit tests, certification exams
+	2.	learning analytics, predictive analytics, enterprise analytics
+
+No child left behind issues (gain in expectations along with sanctions) 
+
+hawthorn effect (i’m being watched)
+
+grovo’s …. 
+instructional designer?
+
+
+
+descriptive analytics
+inferential analytics, predictive, objective level intervention step level intervention personalized pathways
+
+how many days into the course before i open the syllabus!!!!
+something measurable! someone not on fire is not going to do it.
+
+time spent vs score graph…. 
+error rate vs practice opportunity (first attempt) plus spots to show number of observations, each is a different item. 
+
+marton gave - algebra books. 
+
+order of item
+
+IRT difficulty by duration by median number of tries (what is int)
+
+</Text>
+        </Document>
+        <Document ID="43">
+            <Title>Ben: </Title>
+            <Synopsis>Gensim</Synopsis>
+        </Document>
+        <Document ID="36">
+            <Title>Guest Speaker: Gilad Barast</Title>
+            <Text>Gilad Barast
+Data Scientist, Dstillery
+Tuesday 2/23 at 5:00 PM in the classroom
+
+
+distillery : Data Science for business by FosterProvost Tom Fawcett  what you need to know about data mining and data-analytic thinking
+
+ADVICE: 
+	1.	80% of the time - preprocessing data
+	2.	have to learn the data
+	1.	DOCUMENT EVERYTHING YOU LEARN
+	2.	START A CENTRAL REPOSITORY
+
+programmatic advertising - there are many opportunities to show a user ads
+
+a crosswalk
+
+prospect rankings (have seen the ad)
+converters (engaged with the ad)
+p(sv | urls) = 1/(1+e^-(b0+b1x))
+
+“we extend your reach by finding more projects whose behavior is relevant to your brand — right now!”
+
+path to purchase: understanding the models
+(insurance, home imp, mortgage, investing, localness, real estate, credit reporting)
+
+
+you make your opportunities - you decide things that later on have impact on what is possible. 
+
+
+Dstillery Talk - Metis
+
+Most useful resource: Unix commands, sed, awk... for preprocessing
+
+Book: Data Science for Business - best reference
+
+For any new job, when familiarizing yourself with the data, document everything!
+
+Digital advertising in the day and age of big data:
+ds is used for:
+	predict user behavior
+	detect fraud
+
+programmatic advertising:
+	personalize ads
+	use stats models to determine what would be valuable to you
+	NYTIMES EXAMPLE:
+* ad exchange -&gt;auction house: request for ad (NYTIMES)
+* dstillery listens to 5 billion ad requests a day, they pick the best ad for you with a bid in 5 milliseconds
+* one company wins the auction and their ad is served
+
+dstillery tracks to see if you go to the website of the ad served, within x days. This is a conversion. 
+
+use servers, machine learning, to look at your browser history to maximize conversions.
+
+personalize the best ads at the best times based on where you are...
+
+Training the machine:
+	Predictive modeling: 
+o your cookies
+o logistic regression - car purchase
+o create specific models for each customer, bmw - use cookies of the people that visit BMW's site then match to score users
+
+o pos labels - from the websites
+o neg labels - people who didn't convert
+o create model to predict whether new person will convert
+
+Where they get data:
+
+* tracking devices, visit client site, get a tracking device to forward your browsing behavior
+
+* buy third party data, visit history on the web "share your x on Facebook"
+
+* device behavior - on phone, ads on your phone gets device behavior, like device location. Lat and long of where you are when you were playing candy crush
+
+* device locations!!! map caucus areas, people who voted republican at caucus locations visited 
+
+* tracked throughout the day, build a behavioral profile throughout the day to sell ads. They care about browsing history and device data.
+
+* you are using a laptop at office,, tablet at home, and phone on the way home -- all collected from aps that show ads because they send bid requests.
+
+* features: browser properties, os, device type, and operating system
+
+* how do you match cookies on different devices:
+* crosswalk - matches cell phone user to laptop :
+* statistical match: look at shared ip addresses, this laptop and this cell phone have the same IP address - use probabilistic models. filter out ip with 100s of device ids- probably a coffee house. 
+
+* see cookies and score them in real time to decide whether to bid to serve an ad to them. 
+
+observation, just watch.... cross the threshold, get served an ad, continue to be served the ad until they convert (they are no longer prospects, they are converters) or stop visiting websites and they fall back below the threshold, they stop being shown the ad.
+
+Score people and put them into different segments. y axis = performance, x axis= reach
+
+"We extend reach by finding more prospect whose behavior is relevant to your brand"
+people that have already been to the sites are the best bets but that group is small
+good prospects are people who haven't been to the site but their browsing profile match client’s customer base (looking at browser history)
+
+		distillery - tracks 30 days before conversion of converters browsing history.  Days before conversion heat map. Insurance site, converters visiting many other insurance websites, they also went to credit agency sites, home improvement sites... gains insight into converters history. Insight affects advertising strategy. People who are on insurance sites are ready to buy insurance, people who are on home improvement sites are 2 t-14 days. 
+
+		Kiel’s, wants to know where their clients live. can place billboards in places where people buy keels.
+
+		
+what's noise:
+1. reliability issue on location information:
+	data is scrambled, or apps are untrustworthy 
+	people piles
+	need to clean data and preprocess:
+	some apps have great location data, e.g. tinder
+	exclude porn sites, gambling data - it is excluded from the model
+2. Bots:
+	non-human traffic
+	people use bots to browse websites and ramp up site volume to get higher ad premiums 
+	try to filter out these fraudulent websites.
+	co-visitation patterns (graph) of users don't make sense -- bots
+	find a list of shitty websites that employ bots and get a list of fraudulent websites.
+	exclude bot data and do not bid on those fraudulent websites
+
+Agenda to clients:
+what works
+	super targeted advertising 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Text>
+        </Document>
+        <Document ID="29">
+            <Title>Endnotes</Title>
+            <Text> All footnotes will get inserted here upon print, and this bubble will be removed automatically.</Text>
+        </Document>
+        <Document ID="51">
+            <Title>Music Algorithms Hackathon</Title>
+            <Text>generator modifier selector — iliac suite
+david cope - experiments in musical intelligence (EMI) 1980s
+
+
+synfire, rapid composer, wolframtones, jukedeck
+
+extemporre — andrew sorensen
+tital — alex mclean
+gibber — charlie roberts
+
+
+music formats, midi, musicxml, lilypond, humdrum, abc notation, 
+
+
+sussmm@yahoo.com — mick bussman using rosenberg algorithmic music generator
+https://soundcloud.com/sussmm
+
+
+1 use horizontal line as the fractal base
+use length of note to determine wavelength
+builds pythagorean scale out of circle of fifths
+
+number of diatonic intervals, vs chromatic intervals. … criteria as measure of fitness
+
+-x extract… wave files
+
+
+pyo abjad
+
+
+I see that people are willing to pay for X, so i want to make X
+What they need is irrelevant 
+</Text>
+        </Document>
+        <Document ID="37">
+            <Title>Guest Speaker: James Faghmous</Title>
+            <Text>James Faghmous
+Assistant Professor &amp; CTO, Arnhold Institute, Icahn School of Medicine at Mount Sinai
+Wednesday 2/24 at 5:00 PM in the classroom
+
+Basically you can use satellite data and socioeconomic data to infer health of patients. </Text>
+        </Document>
+        <Document ID="44">
+            <Title>Guest Speaker: Elise Runde Voss</Title>
+            <Text>Elise Runde Voss
+CEO &amp; Co-founder, Upscored
+Tuesday 2/16 at 5:00 PM in the classroom
+Elise &amp; her colleague Dan will be talking about Upscored and connecting employers with students
+</Text>
+        </Document>
+        <Document ID="38">
+            <Title>Guest Speakers</Title>
+        </Document>
+        <Document ID="45">
+            <Title>Guest Speaker: Siddharth Motwani</Title>
+            <Text>Siddharth Motwani
+Senior Data Strategy Analyst, Priceline
+Wednesday 2/17 at 5:00 PM in the classroom
+Sidd will be speaking about Data Science at Priceline
+</Text>
+        </Document>
+        <Document ID="52">
+            <Title>Guest Speaker: David Robinson</Title>
+            <Text>David Robinson
+Data Scientist, Stack Overflow
+Thursday 2/4 at 5:00 PM in the classroom
+Jen is still finding out David's topic for his talk!
+
+
+</Text>
+        </Document>
+        <Document ID="39">
+            <Title>Class Notes: W7D5 </Title>
+            <Synopsis>LDA</Synopsis>
+            <Text>W7D5
+
+
+Eigen values
+
+there are many ways to do feature selection and reduction of features. 
+
+take features and create new features and feature selection on the new features
+
+you can change frame of reference and combine features 
+represent data in a lower dimensional space, and still be able to recreate our original data.   retain most info in lower dimensional space. Problem; loose interpretability
+
+
+D2 
+
+uncorrelated features are all normal or perpendicular to one another. so that’s great… we optimize our feature space to only include the essentials . they orthogonal to one another. 
+
+# principle e components as # features but you can specify
+
+features selection removes
+feature extraction keeps linear combination of both
+
+Even though you have orthogonal features, although you’ve now successfully represented your feature space in the fewest dimensions, it doesn’t mean they’ll be the most useful for your model. Right?
+
+SCREE plots
+
+Kernel PCA (project into higher space do pCa and then bring it back down.)
+
+
+PCA analysis, you get same number of components as features but some have coefficients that explain for more of the variance. They are ordered (something to do with eigenvalues) so you can choose the top set of them. These new pca components are all perpendicular, so there is NO correlation. 
+
+kernels like RBF https://en.wikipedia.org/wiki/Radial_basis_function
+
+swiss roll. you can simplify by changing frame of reference. 
+
+stochastic neighborhood embedding
+
+isomap - local structure, who’s close to each other, 
+tcne 
+local linear imbedding
+multiple dimmentional scalling - compare distances between …relative distances are the same in the lower space. 
+
+
+eigenvalue is the scale….
+
+latent semantic analysis or indexing (words with similar semantic meaning) how can we do this: PCA ????    </Text>
+        </Document>
+        <Document ID="46">
+            <Title>Guest Speaker: Sudheer Marisetti</Title>
+            <Text>Sudheer Marisetti
+Senior Director of Data Science Engineering, Aetna
+Tonight! 2/8 at 5:00 PM in the classroom
+Sudheer will be speaking about Architecture &amp; Tools used at Aetna
+
+
+</Text>
+        </Document>
+        <Document ID="60">
+            <Title> Careers Workshop 1: LinkedIn Clinic! copy</Title>
+        </Document>
+    </Documents>
+</SearchIndexes>

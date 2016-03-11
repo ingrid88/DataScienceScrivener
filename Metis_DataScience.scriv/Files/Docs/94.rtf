@@ -1,0 +1,159 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf340
+\cocoascreenfonts1{\fonttbl\f0\fnil\fcharset0 Cochin;\f1\fnil\fcharset0 LucidaGrande;\f2\froman\fcharset0 Times-Roman;
+}
+{\colortbl;\red255\green255\blue255;\red83\green83\blue83;\red255\green255\blue255;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid2\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid3\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li2160\lin2160 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid4\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li2880\lin2880 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\fi360\sl288\slmult1\pardirnatural
+
+\f0\fs28 \cf0 Ed Podojil, NY Times\
+Working with teams\
+{\field{\*\fldinst{HYPERLINK "mailto:Edward.podojil@nytimes.com"}}{\fldrslt Edward.podojil@nytimes.com}}\
+@Podopie\
+\
+\
+!. Listen to everyone you work with\
+2. Figure out what they really mean\
+\
+You work with a lot of people and you have to understand how to work with a lot of people.  \
+\
+Dtakind, homejoy, minibar, animoto, \
+Bayesian processing, logistic regression\
+Babysitting hadoop: \
+\
+How to trust data!!!?   HOW DO YOU TRUST THE DATA THATS COMING IN?  (How do we validate it, how do we write unit tests (to make sure data coming in is as we expect it to look like, having some way to track data makes a magnitude of difference)\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\li720\fi-720\sl288\slmult1\pardirnatural
+\ls1\ilvl0\cf0 {\listtext	\'95	}Data analytics ; what trends exist in user behavior, du users fall into natural bahavior segments?\
+{\listtext	\'95	}Data governance: how do we trust the data coming in? What kind of data is missing in order to do good analysis?\
+\pard\tx940\tx1440\tx2160\tx2880\tx3600\tx4320\li1440\fi-1440\sl288\slmult1\pardirnatural
+\ls1\ilvl1\cf0 {\listtext	
+\f1 \uc0\u8259 
+\f0 	}Verifying data: a few things you can do:\
+\pard\tx1660\tx2160\tx2880\tx3600\tx4320\li2160\fi-2160\sl288\slmult1\pardirnatural
+\ls1\ilvl2\cf0 {\listtext	
+\f1 \uc0\u8259 
+\f0 	}User interaction data for example, build out selenium test to validate that certain javascript runs\
+{\listtext	
+\f1 \uc0\u8259 
+\f0 	}Keep track of how many files were pushed to s3, where they pushed somewhere else. Following the process\
+{\listtext	
+\f1 \uc0\u8259 
+\f0 	}Algorithmic stuff\'85 if all user ids are an md5hash, validate that it equates back to what it was supposed to be. Eg all the values were hex\
+{\listtext	
+\f1 \uc0\u8259 
+\f0 	}Marrying the data: using different datasets that have the same goal: they should be giving similar results\
+\pard\tx2380\tx2880\tx3600\tx4320\li2880\fi-2880\sl288\slmult1\pardirnatural
+\ls1\ilvl3\cf0 {\listtext	
+\f1 \uc0\u8259 
+\f0 	}Google analytics data to own internal data sources, looking at differences (differentials) to validate that things are looking like what they should. \
+{\listtext	
+\f1 \uc0\u8259 
+\f0 	}Building out trends: eg. Time series analysis\
+{\listtext	
+\f1 \uc0\u8259 
+\f0 	}Eg. At homejow, how would arkinging imact new users hitting the site. Build a baseline model. Whenever actual new users were higher or lower than 3% the data looks wonky\'85 was it a dos attack or a lot of robots are hitting us?\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\li720\fi-720\sl288\slmult1\pardirnatural
+\ls1\ilvl0\cf0 {\listtext	\'95	}Data engineering: how do we tie all the data sources together effectively to ask complicated questions?\
+\pard\tx940\tx1440\tx2160\tx2880\tx3600\tx4320\li1440\fi-1440\sl288\slmult1\pardirnatural
+\ls1\ilvl1\cf0 {\listtext	
+\f1 \uc0\u8259 
+\f0 	}Hadoop is a common approach\
+{\listtext	
+\f1 \uc0\u8259 
+\f0 	}Have to understand how to build the etl\'92s out\'85.. \
+{\listtext	
+\f1 \uc0\u8259 
+\f0 	}Instead of modeling he explained why the data sucks and how it can be changed  \
+{\listtext	
+\f1 \uc0\u8259 
+\f0 	}Knowing how to shape your data, where to put it and connect all the dots\
+\pard\tx560\tx1120\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
+\cf0 \
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\li720\fi-720\sl288\slmult1\pardirnatural
+\ls2\ilvl0\cf0 {\listtext	\'95	}Data science: how do we create products for users given data?\
+\pard\tx560\tx1120\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
+\cf0 \
+Working within a datascience time: 8 people at nytimes. \
+	 -  They are data engineering, deep insights, data analytics, a team asks X but they might be more interested in Y\
+	 - The 1% of data science\'85 recommendations, providing structure to unstructured data\'85 etc.\
+\
+They want more clicks, but more specifically, did the promotion on Facebook they used actually work?  (See \'97 sometimes the cause is the real thing we should look at and not the effect)\
+\
+People expect you to be an expert in efferything, but of course, you aren\'92t\
+\
+The nice part of course is that you fit in the data science spectrum: warby parker director at data science put this awesome 3 graph   (bi analysts, applied statiticians, data engineers)\
+You need to understand where you fit in and how the team complements that. \
+\
+\
+When you work with other teams:\
+Common and a mistake\'85 to involve data earlier in the project process:\
+Can data science provide a solution? Should it? (Is this really a ml problem or just a dashboard problem or a statistics problem\'85 there are a lot of ways to approach the problem. Is this a reasonable approach? \
+What methodologies are present for data collection? How stale does data get? (If a user is going to prescribe\'85 you might use a lot of data\'85..   \
+Are the goals right? What caveats exist?    \
+Making sure that you get involved earlier so that you can think a lot more about the dat models taht are present and they can bild a much better model. (Data scientists work most closely with the data engineers\'85     ) DONT DUPLICATE EFFORTS\'85 duh\'85. Engineers vs scientists\'85. \
+\
+Very easy for a data science team to be solving the same problema s a group of engineers\
+Work with and provide insight on approach isntead of building your own toll and introducing engpoints to the engineers (does this scale?)\
+ - Eg. We do a lot of recirculation to encourage people to keep on clicking\'85. They had two different modeuls that raised th same recommendations\'85 do ew need duplicates of the same link? Does that raise click rates?\
+\
+Think about if the data is already there\'85 what is the taxonomy or the data model around it?  \
+\
+\
+Product and project management:\
+Being responsible for your own work and setting timelines.\
+He hasn\'92t worked on teams with a project manager, they dont understand what has to be done. So you have to set the golas really clearly with the team that you are workign with. A lot of good wins if you do this\
+\
+Hypothesize! What are your options? Can you balance work against gains?\
+Eg. Pitch 4 options\'85.   Scale of work from nothing to a lot, how much a person would gain from this work. \
+\
+User timing: where is our gretest opportunity\'85 a lot of people engage within the first 5-10 seconds. \
+\
+\
+HACK!\
+Its important to just get something out there\'85. Get dataset together you have three features, time article published, desk it belonged to, was it put on facebook\'85 you bild it, get model going\'85 put it up as a slack robot?? And every hour it recommends something (THIS IS AN MVP) it helps service users as you are trying to build mroe complicated tools\
+\
+Proof of concept idea:\
+Dedicated time to reelase an early demo / version:\
+- Get something out there to use\
+  =- Quick and dirty api\
+ - Slack bot?\
+\
+First proof of concept and then REFINE:\
+\'85 Now I want to start recommending things to people\
+Ocelot suggestions?\
+\
+\
+Start getting feed back and understanding key metrics: is what your predictions do make a difference?  Even if it was a dashboard, you could easily go into the logs and see how often people are coming ot the dashboard\'85. If you can say spcifically how things have improved\'85 you can guage etc..\
+\
+\
+Schedule meetings wiht your clients. \
+Iterating, fixing bugs, making it faster, improve dataflow\'85 if this is internally driven? How can you show that your work made a difference?\
+Iterate: fix bugs, imrpove data flow / accuracies\
+\
+Try not to think more than 2-3 weeks ahead\
+\
+\
+Research and followup: gather feedback from your users, maintain metrics, show\
+\
+Weekly sprint, biweekly sprint.\
+\
+\
+FINAL THING: MOVE ON.\
+Your role as a datascientist can be to get something out there\'85 build an algorithm, build a product\'85. You can\'92t sit on a project forever. The longest he\'92s ever thought was an 8 week project\'85 what does the handoff look like, what does my deliverable look like, who am I handing it to, what can they do with it?\
+\
+Being able to get that model built to be useful is 90% of the solution. An engineer should be able to look at code and know what you\'92re doing. They should be able to work with it themselves so you can move on.  You don\'92t want to sit on the same project all day: it can turn into a problem!\
+\
+ETL: extract transform load:    \'97 no one knew how to use the product and that was his fault for not training people on it. Hand off to someone else so they can manage it and take care of it while you move on to something else. \
+\
+\
+\pard\pardeftab720\sl480
+
+\f2\b\fs32 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0
+\b0 I like to probe interviewees on their favorite machine learning algorithm: explain it to me as a fellow Data Scientist, and then explain it to me as if I\'92m the CEO\
+\
+Figure out how many papers to deliver to coffee shops to optimize for costs\
+
+\f0\fs28 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+}

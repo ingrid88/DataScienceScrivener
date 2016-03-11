@@ -1,0 +1,78 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf340
+\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red53\green53\blue53;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid1\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid102\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listname ;}\listid2}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
+\deftab560
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f0\fs24 \cf2 Supervised learning, data with correct answer \'97> model\
+unlabeled data \'97> structure  \
+\pard\pardeftab560\pardirnatural\partightenfactor0
+\ls1\ilvl0\cf2 {\listtext	1.	}determine clustering of classes\
+{\listtext	2.	}can we find groups similar to one another\
+{\listtext	3.	}latent topics or structure that weren\'92t obvious before\
+{\listtext	4.	}density estimation \
+\pard\pardeftab560\slleading20\partightenfactor0
+\cf2 unlabeled data (no answers) \'97> structure \'97> supervised model\
+\
+inertia, sum of square distances in each cluster (low inertia = high density)\
+\
+we need to run this multiple times because there may be a local minimum\
+\
+Kmeans++ is the idea that you can choose the first cluster centroid randomly, but then choose subsequent once that are far from that point\'85 this makes reaching an equilibrium a bit faster. \
+\
+how do we know the K. use the inertia. the inertia goes down as you increase k\'85. \
+or use cross validation, or does it make sense based on the question you\'92re trying to answer\
+\
+FEATURES MUST BE SCALED!\
+>> sklearn.preprocessing.scale(x)\
+\
+\
+\
+Typically, topic models are evaluated in \
+the following way. First, hold out a sub-\
+set of your corpus as the test set. Then, \
+fit a variety of topic models to the rest of \
+the corpus and approximate a measure \
+of  model  fit  (for  example,  probability)  \
+for  each  trained  model  on  the  test  set.  \
+Finally, choose the model that achieves \
+the best held-out performance\
+\
+KMEANS Clustering\
+\pard\pardeftab560\pardirnatural\partightenfactor0
+\ls2\ilvl0\cf2 {\listtext	\'95	}What do you need?\
+\pard\pardeftab560\pardirnatural\partightenfactor0
+\ls2\ilvl1\cf2 {\listtext	\'95	}labelled dataset\
+{\listtext	\'95	}distance metric (euclidean default, minkowski space)\
+{\listtext	\'95	}scaled variables (how do you scale categorically?)\
+{\listtext	\'95	}choice of K!\
+\pard\pardeftab560\pardirnatural\partightenfactor0
+\ls2\ilvl0\cf2 {\listtext	\'95	}How is model fitting accomplished?\
+\pard\pardeftab560\pardirnatural\partightenfactor0
+\ls2\ilvl1\cf2 {\listtext	\'95	}lazy algorithm \'97 NO TRAINING and just a declaration of your parameters\
+{\listtext	\'95	}\
+\pard\pardeftab560\pardirnatural\partightenfactor0
+\ls2\ilvl0\cf2 {\listtext	\'95	}How are model predictions made?\
+\pard\pardeftab560\pardirnatural\partightenfactor0
+\ls2\ilvl1\cf2 {\listtext	\'95	}majority rule? equal weighting or weighted\'85errr by distance. the shorter the distance, the larger the weight\
+\pard\pardeftab560\pardirnatural\partightenfactor0
+\ls2\ilvl0\cf2 {\listtext	\'95	}What effect does the choice of K have?\
+\pard\pardeftab560\pardirnatural\partightenfactor0
+\ls2\ilvl1\cf2 {\listtext	\'95	}\
+\pard\pardeftab560\pardirnatural\partightenfactor0
+\ls2\ilvl0\cf2 {\listtext	\'95	}How do you choose K?\
+{\listtext	\'95	}What other choices affect predictions?\
+\pard\pardeftab560\pardirnatural\partightenfactor0
+\ls2\ilvl1\cf2 {\listtext	\'95	}radius, distance metric, \
+\pard\pardeftab560\pardirnatural\partightenfactor0
+\ls2\ilvl0\cf2 {\listtext	\'95	}How does KNN compare to other models?\
+\pard\pardeftab560\pardirnatural\partightenfactor0
+\ls2\ilvl1\cf2 {\listtext	\'95	}good for multi class problems, fast to train and slow to predict. \
+{\listtext	\'95	}non parametric, so it\'92s not making assumptions about the data (like what kind of distribution)\
+{\listtext	\'95	}it can be appended to many things, recommendation systems, in combination with other \'85. (used in hand writing recognition, image recognition\
+\pard\pardeftab560\pardirnatural\partightenfactor0
+\ls2\ilvl0\cf2 {\listtext	\'95	}What are KNN's strengths and weaknesses?\
+}
